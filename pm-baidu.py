@@ -4,7 +4,7 @@ import smtplib
 from email.mime.text import MIMEText  
 import urllib, urllib2, json
 #-------Get PM2.5-----------#
-url = 'http://apis.baidu.com/apistore/aqiservice/aqi?city=%E5%8C%97%E4%BA%AC'
+url = 'http://apis.baidu.com/apistore/aqiservice/aqi?city=%E5%8C%97%E4%BA%AC' #need to change city code,current is beijing
 req = urllib2.Request(url)
 
 req.add_header("apikey", "your baidu api key")  #need to change
