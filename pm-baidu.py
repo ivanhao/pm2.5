@@ -18,6 +18,8 @@ if(content):
     level = str(pm['level'].encode("utf-8"))
     aqi = str(pm['aqi'])
     time = str(pm['time']) 
+    city = str(pm['city'].encode("utf-8"))
+
 #---------email---------------#
 sender = 'youremail@qq.com'   #need to change
 to_list = [ 'aaa@qq.com', 'bbb@qq.com' ]  #need to change
@@ -26,7 +28,7 @@ smtpserver = 'smtp.qq.com'  #smtp url optional to change
 username = 'your sender email username'  #need to change
 password = 'email password'  #need to change
 
-msg = MIMEText('<td>PM2.5: '+aqi+'</td><br><td>状态：'+level+'</td><br><td>更新时间: '+time+'</td>', 'html')  #optional to change
+msg = MIMEText('<td>城市(city): '+city+'</td><br><td>PM2.5: '+aqi+'</td><br><td>状态(status)：'+level+'</td><br><td>更新时间(last update): '+time+'</td>', 'html') #optional to change
 msg['Subject'] = subject  
 smtp = smtplib.SMTP()  
 smtp.connect(smtpserver)  
