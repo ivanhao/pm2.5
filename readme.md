@@ -2,4 +2,4 @@
 
 ## pm-baidu.py
 
-  use www.baidu.com's open api to get data and send email
+  use [baidu's open api](http://apistore.baidu.com/apiworks/servicedetail/116.html) to get data and send email
