@@ -31,5 +31,5 @@ msg['Subject'] = subject
 smtp = smtplib.SMTP()  
 smtp.connect(smtpserver)  
 smtp.login(username, password)  
-smtp.sendmail(sender, receiver, msg.as_string()) 
+smtp.sendmail(sender, to_list, msg.as_string()) 
 smtp.quit()  
