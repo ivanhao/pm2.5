@@ -38,7 +38,7 @@ if(content):
 #---------email---------------#
 sender = 'youremail@qq.com'   #need to change
 to_list = [ 'aaa@qq.com', 'bbb@qq.com' ]  #need to change
-subject = 'PM2.5:'+ aqi + '->' + level + '   天气：' + weather + '->' + temp + '度'   #optinal to change  
+subject = 'PM2.5：'+ aqi + '--' + level + '   天气：' + weather + '--' + temp + '度'  #optional to change
 smtpserver = 'smtp.qq.com'  #smtp url optional to change
 username = 'your sender email username'  #need to change
 password = 'email password'  #need to change
