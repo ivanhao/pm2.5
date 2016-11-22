@@ -32,8 +32,7 @@ smtpserver = 'smtp.qq.com'  #smtp url optional to change
 username = 'your sender email username'  #need to change
 password = 'email password'  #need to change
 
-msg = MIMEText('<td>城市(city): '+city+'</td><br><td>PM2.5: '+aqi+'</td><br><td>状态(status)：'+level+'</td><br><td>更新时间(last update): '+time+'</td><br><br><td>天气：'+weather+'</td><br><td>气温：'+ temp + '</td><br><td>风力：' + ws + '</td><br><td>更新时间：'+ wtime + '</td>', 'html')
-msg = MIMEText('<td>城市(city): '+city+'</td><br><td>PM2.5: '+aqi+'</td><br><td>状态(status)：'+level+'</td><br><br><td>天气：'+weather+'</td><br><td>气温：'+ temp + '</td><br><td>湿度：'+humi+'</td><br>$
+msg = MIMEText('<td>城市(city): '+city+'</td><br><td>PM2.5: '+aqi+'</td><br><td>状态(status)：'+level+'</td><br><br><td>天气：'+weather+'</td><br><td>气温：'+ temp + '</td><br><td>湿度：'+humi+'</td><br><td>风力：' + ws + '</td><br><td>更新时间：'+ time + '</td>', 'html')
 
 
 msg['Subject'] = subject  
